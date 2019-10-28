@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0177D64F-FD02-4E2D-B4DE-7F59106A0F6F}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>XAMLDesignThinking.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>XAMLDesignThinking.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CustomEntryRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms.PancakeView">
+      <Version>1.2.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\XAMLDesignThinking\XAMLDesignThinking.csproj">
+      <Project>{FF3C6CE6-6F50-42BC-84EF-989365A611A2}</Project>
+      <Name>XAMLDesignThinking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PLOGIN1.png" />
+    <BundleResource Include="Resources\PLOGIN1%402x.png" />
+    <BundleResource Include="Resources\PLOGIN1%403x.png" />
+    <BundleResource Include="Resources\Profile.png" />
+    <BundleResource Include="Resources\Profile%402x.png" />
+    <BundleResource Include="Resources\Profile%403x.png" />
+    <BundleResource Include="Resources\ProfileBtn.png" />
+    <BundleResource Include="Resources\ProfileBtn%402.png" />
+    <BundleResource Include="Resources\ProfileBtn%403x.png" />
+    <BundleResource Include="Resources\CreateProfile.png" />
+    <BundleResource Include="Resources\CreateProfile%402x.png" />
+    <BundleResource Include="Resources\CreateProfile%403x.png" />
+    <BundleResource Include="Resources\Appointment.png" />
+    <BundleResource Include="Resources\Appointment%402x.png" />
+    <BundleResource Include="Resources\Appointment%403x.png" />
+    <BundleResource Include="Resources\UserProfile.png" />
+    <BundleResource Include="Resources\UserProfile%402x.png" />
+    <BundleResource Include="Resources\UserProfile%403x.png" />
+    <BundleResource Include="Resources\Password.png" />
+    <BundleResource Include="Resources\Password%402x.png" />
+    <BundleResource Include="Resources\Password%403x.png" />
+    <BundleResource Include="Resources\Medications.png" />
+    <BundleResource Include="Resources\Medications%403x.png" />
+    <BundleResource Include="Resources\Medications%402x.png" />
+    <BundleResource Include="Resources\Treatments.png" />
+    <BundleResource Include="Resources\Treatments%402x.png" />
+    <BundleResource Include="Resources\Treatments%403x.png" />
+    <BundleResource Include="Resources\Appointments.png" />
+    <BundleResource Include="Resources\Appointments%402x.png" />
+    <BundleResource Include="Resources\Appointments%403x.png" />
+    <BundleResource Include="Resources\Settings.png" />
+    <BundleResource Include="Resources\Settings%402x.png" />
+    <BundleResource Include="Resources\Settings%403x.png" />
+    <BundleResource Include="Resources\Edit.png" />
+    <BundleResource Include="Resources\Edit%402x.png" />
+    <BundleResource Include="Resources\Edit%403x.png" />
+  </ItemGroup>
+</Project>

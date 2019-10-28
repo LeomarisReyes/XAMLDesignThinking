@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             x:Class="XAMLDesignThinking.MainPage">
+
+    <StackLayout Margin="0,80">
+        <StackLayout VerticalOptions="CenterAndExpand">
+              <Image Source="PLOGIN1" Margin="25,0"/>
+              <Label Text="DOCTOR" FontAttributes="Bold" HorizontalTextAlignment="Center" FontSize="20" Margin="0,10,0,0"/>
+              <Label Text="APPOINTMENT" TextColor="#70c4dc" FontAttributes="Bold" FontSize="26" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+              <Button Text="CREATE ACCOUNT" BackgroundColor="#70c4dc" TextColor="White" CornerRadius="35" WidthRequest="265" FontAttributes="Bold" FontSize="Medium" HeightRequest="75" VerticalOptions="Center" HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>

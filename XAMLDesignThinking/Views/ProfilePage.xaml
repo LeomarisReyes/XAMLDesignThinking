@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="YOUR PROFILE"
+     x:Class="XAMLDesignThinking.Views.ProfilePage">
+
+<ScrollView>
+   <Grid RowSpacing="0">
+       <Grid.RowDefinitions>
+           <RowDefinition Height="Auto"/>
+           <RowDefinition Height="Auto"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="Auto"/>
+           <RowDefinition Height="Auto"/>
+       </Grid.RowDefinitions>
+
+       <BoxView Grid.Row="0" HorizontalOptions="FillAndExpand" HeightRequest="5" WidthRequest="35" Color="#5db8cd"/>
+
+       <Grid Grid.Row="1" BackgroundColor="#65b4bc" Padding="40,80,40,30">
+           <Grid.ColumnDefinitions>
+               <ColumnDefinition Width="*"/>
+               <ColumnDefinition Width="*"/>
+               <ColumnDefinition Width="*"/> 
+           </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+               <RowDefinition Height="Auto"/>
+               <RowDefinition Height="Auto"/>
+               <RowDefinition Height="Auto"/>
+               <RowDefinition Height="Auto"/>
+           </Grid.RowDefinitions>
+
+           <Image Source="UserProfile" Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" Margin="0,0,20,0"/>
+
+           <StackLayout Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Start">
+               <Image Source="UserProfile" HeightRequest="30"/>
+               <Label Text="Joh Due" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+           </StackLayout>
+
+           <StackLayout Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Start">
+               <Image Source="UserProfile" HeightRequest="30"/>
+               <Label Text="(809) 986-5757" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+           </StackLayout>
+
+           <StackLayout Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Start">
+               <Image Source="UserProfile" HeightRequest="25"/>
+               <Label Text="JohDue@site.com" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+           </StackLayout>
+
+           <Button Grid.Row="3" Grid.Column="1" BackgroundColor="Transparent" FontAttributes="Bold" Text="Setting" BorderColor="#8dced6" WidthRequest="130" HeightRequest="45" FontSize="15" BorderWidth="5" CornerRadius="20" TextColor="Yellow"/>
+           <Button Grid.Row="3" Grid.Column="2" BackgroundColor="Transparent" FontAttributes="Bold" Text="Edit" BorderColor="#8dced6" WidthRequest="130"  HeightRequest="45" FontSize="15" BorderWidth="5" CornerRadius="20" TextColor="Yellow"/>
+           
+       </Grid> 
+
+       <StackLayout Grid.Row="2" BackgroundColor="#abd2d8" VerticalOptions="FillAndExpand">
+           <BoxView HorizontalOptions="FillAndExpand" HeightRequest="10" WidthRequest="185"  Margin="0,0,0,15" Color="White"/>
+ 
+              <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="50" Margin="20,0,20,15">
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                  </Grid.ColumnDefinitions>
+
+                  <BoxView Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand" Margin="0,0,15,0" WidthRequest="10" Color="#36767f"/>
+                  <Image Grid.Column="1" Source="Appointment" HeightRequest="30" WidthRequest="30"/>
+                  <Label Grid.Column="2" Text="Create an appointment" FontSize="18" VerticalOptions="Center" />
+                  <Button Grid.Column="3"
+                        Margin            ="0,0,20,0"
+                        Text              ="*"
+                        FontAttributes    ="Bold"
+                        TextColor         ="Yellow"
+                        WidthRequest      ="40"
+                        HeightRequest     ="40"
+                        CornerRadius      ="20"
+                        VerticalOptions   ="Center"
+                        HorizontalOptions ="End"
+                        BackgroundColor   ="#f3f6f1"/> 
+              </Grid>
+
+
+            <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="50" Margin="20,0,20,15">
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                  </Grid.ColumnDefinitions>
+
+                  <BoxView Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand" Margin="0,0,15,0" WidthRequest="10" Color="#36767f"/>
+                  <Image Grid.Column="1" Source="Password" HeightRequest="30" WidthRequest="30"/>
+                  <Label Grid.Column="2" Text="Change password" FontSize="18" VerticalOptions="Center" />
+                  <Button Grid.Column="3"
+                        Margin            ="0,0,20,0"
+                        Text              ="*"
+                        FontAttributes    ="Bold"
+                        TextColor         ="Yellow"
+                        WidthRequest      ="40"
+                        HeightRequest     ="40"
+                        CornerRadius      ="20"
+                        VerticalOptions   ="Center"
+                        HorizontalOptions ="End"
+                        BackgroundColor   ="#f3f6f1"/> 
+              </Grid>
+
+            <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="50" Margin="20,0,20,15">
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                  </Grid.ColumnDefinitions>
+
+                  <BoxView Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand" Margin="0,0,15,0" WidthRequest="10" Color="#36767f"/>
+                  <Image Grid.Column="1" Source="Medications" HeightRequest="30" WidthRequest="30"/>
+                  <Label Grid.Column="2" Text="Medications" FontSize="18" VerticalOptions="Center" />
+                  <Button Grid.Column="3"
+                        Margin            ="0,0,20,0"
+                        Text              ="*"
+                        FontAttributes    ="Bold"
+                        TextColor         ="Yellow"
+                        WidthRequest      ="40"
+                        HeightRequest     ="40"
+                        CornerRadius      ="20"
+                        VerticalOptions   ="Center"
+                        HorizontalOptions ="End"
+                        BackgroundColor   ="#f3f6f1"/> 
+              </Grid>
+
+            <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="50" Margin="20,0,20,15">
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                  </Grid.ColumnDefinitions>
+
+                  <BoxView Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand" Margin="0,0,15,0" WidthRequest="10" Color="#36767f"/>
+                  <Image Grid.Column="1" Source="Treatments" HeightRequest="30" WidthRequest="30"/>
+                  <Label Grid.Column="2" Text="Treatments" FontSize="18" VerticalOptions="Center" />
+                  <Button Grid.Column="3"
+                        Margin            ="0,0,20,0"
+                        Text              ="*"
+                        FontAttributes    ="Bold"
+                        TextColor         ="Yellow"
+                        WidthRequest      ="40"
+                        HeightRequest     ="40"
+                        CornerRadius      ="20"
+                        VerticalOptions   ="Center"
+                        HorizontalOptions ="End"
+                        BackgroundColor   ="#f3f6f1"/> 
+              </Grid>
+
+            <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="50" Margin="20,0,20,15">
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                  </Grid.ColumnDefinitions>
+
+                  <BoxView Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand" Margin="0,0,15,0" WidthRequest="10" Color="#36767f"/>
+                  <Image Grid.Column="1" Source="Appointments" HeightRequest="30" WidthRequest="30"/>
+                  <Label Grid.Column="2" Text="Appointments" FontSize="18" VerticalOptions="Center" />
+                  <Button Grid.Column="3"
+                        Margin            ="0,0,20,0"
+                        Text              ="*"
+                        FontAttributes    ="Bold"
+                        TextColor         ="Yellow"
+                        WidthRequest      ="40"
+                        HeightRequest     ="40"
+                        CornerRadius      ="20"
+                        VerticalOptions   ="Center"
+                        HorizontalOptions ="End"
+                        BackgroundColor   ="#f3f6f1"/> 
+              </Grid> 
+      </StackLayout>
+
+       <BoxView Grid.Row="3" HorizontalOptions="FillAndExpand" HeightRequest="12" WidthRequest="150" Color="#387ba4"/>
+
+       <BoxView Grid.Row="4" HorizontalOptions="FillAndExpand" HeightRequest="80" WidthRequest="350" Color="#65b4bc"/>
+
+
+   </Grid>
+</ScrollView>
+</ContentPage>

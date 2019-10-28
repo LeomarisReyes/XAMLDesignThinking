@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XAMLDesignThinking.Views.RegisterPage"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:custom="clr-namespace:XAMLDesignThinking.Controls"
+    ios:Page.UseSafeArea="true">
+
+    <ScrollView>
+        <Grid HorizontalOptions="CenterAndExpand" Padding="55,16,55,0">
+            <Grid.RowDefinitions>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+                 <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Source="Profile" WidthRequest="250" HeightRequest="250"/>
+            <Label Grid.Row="1" HorizontalTextAlignment="Center" FontSize="Large" Margin="0,20,0,0">
+               <Label.FormattedText>
+                    <FormattedString>
+                       <Span Text="CREATE " FontSize="21" ForegroundColor="#70c4dc" />
+                        <Span Text="ACCOUNT" FontSize="22" FontAttributes="Bold" ForegroundColor="#70c4dc" /> 
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <BoxView Grid.Row="2" HorizontalOptions="FillAndExpand" HeightRequest="5" WidthRequest="25" Color="#70c4dc" Margin="45,20"/>
+            <Entry Grid.Row="3" Placeholder="Your nickname" FontAttributes="Bold" PlaceholderColor="#70c4dc" TextColor="#70c4dc" Margin="0,7" HeightRequest="50"/>
+            <Entry Grid.Row="4" Placeholder="Your email" FontAttributes="Bold" PlaceholderColor="#70c4dc"  TextColor="#70c4dc"  Margin="0,7" HeightRequest="50"/>
+            <Entry Grid.Row="5" Placeholder="Your telephone" FontAttributes="Bold" PlaceholderColor="#70c4dc" TextColor="#70c4dc" Margin="0,7" HeightRequest="50"/>
+            <Entry Grid.Row="6" Placeholder="Your password" FontAttributes="Bold" PlaceholderColor="#70c4dc" TextColor="#70c4dc"  Margin="0,7" HeightRequest="50" IsPassword="True"/>
+            <Entry Grid.Row="7" Placeholder="Confirma password" FontAttributes="Bold" PlaceholderColor="#70c4dc" TextColor="#70c4dc" Margin="0,7" HeightRequest="50" IsPassword="True"/>
+            <Button  Grid.Row="8"
+                Text              ="->"
+                FontAttributes    ="Bold"
+                TextColor         ="White"
+                WidthRequest      ="80"
+                HeightRequest     ="80"
+                CornerRadius      ="40"
+                VerticalOptions   ="Center"
+                HorizontalOptions ="Center"
+                Clicked           ="CreateAccount_Clicked"
+                BackgroundColor   ="#70c4dc"/> 
+        </Grid>
+    </ScrollView>
+</ContentPage>
